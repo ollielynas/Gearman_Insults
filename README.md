@@ -1,2 +1,2 @@
-# Gearman_Insults
- a list of gearman insults
+# Gearman Insults
+Random german insult genorator 

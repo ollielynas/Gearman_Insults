@@ -1,0 +1,156 @@
+.body {
+    background-color: #678612;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
+
+#title:before {
+    content: "Gearman Insults"
+}
+
+#title:hover::before {
+    content:'Deutsche Beleidigungen';
+}
+.insults {
+    animation: pop-up 1s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    border-radius: 25px;
+    height: 70%;
+    width: 60%;
+    left: 50%;
+    top: 35%;
+    background-color: black;
+    transform: translate(-50%, -0%);
+    color: grey;
+}
+
+
+
+#insult-text {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 3.2vw;
+}
+
+#insult-text:before {
+    content: "Französische Kuh"
+}
+
+#insult-text:hover::before {
+    content: "French Cow"
+}
+
+
+  .wave {
+    background: url('https://aquaworldcruises.com/wp-content/themes/aqua-world-theme/images/wave.svg') repeat-x;
+    position: absolute;
+    bottom: 80%;
+    width: 200vw;
+    height: 100%;
+    -webkit-animation: wave 8s cubic-bezier(.36,.45,.63,.53) infinite;
+    animation: wave 8s cubic-bezier(.36,.45,.63,.53) infinite;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transform: rotateX(180deg);
+
+}
+
+.wave2 {
+    background: url('https://aquaworldcruises.com/wp-content/themes/aqua-world-theme/images/wave.svg') repeat-x;
+    position: absolute;
+    bottom: 80%;
+    width: 200vw;
+    height: 100%;
+    -webkit-animation: wave 7s cubic-bezier(.36,.45,.63,.53) infinite;
+    animation: wave 7s cubic-bezier(.36,.45,.63,.53) infinite;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+    transform: rotateX(180deg)
+}
+
+.wave3 {
+    background: url('https://aquaworldcruises.com/wp-content/themes/aqua-world-theme/images/wave.svg') repeat-x;
+    position: absolute;
+    bottom: 80%;
+    width: 200vw;
+    height: 100%;
+    -webkit-animation: wave 6s cubic-bezier(.36,.45,.63,.53) infinite;
+    animation: wave 6s cubic-bezier(.36,.45,.63,.53) infinite;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+    transform: rotateX(180deg)
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .wave {
+        top:-75px;
+        height: 75px
+    }
+}
+
+@-webkit-keyframes wave {
+    0% {
+        margin-left: 0
+    }
+
+    100% {
+        margin-left: -1920px
+    }
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0
+    }
+
+    100% {
+        margin-left: -1920px
+    }
+}
+
+@-webkit-keyframes swell {
+    0%,100% {
+        -webkit-transform: translate3d(0,-25px,0);
+        transform: translate3d(0,-25px,0)
+    }
+
+    50% {
+        -webkit-transform: translate3d(0,5px,0);
+        transform: translate3d(0,5px,0)
+    }
+}
+
+@keyframes swell {
+    0%,100% {
+        -webkit-transform: translate3d(0,-25px,0);
+        transform: translate3d(0,-25px,0)
+    }
+
+    50% {
+        -webkit-transform: translate3d(0,5px,0);
+        transform: translate3d(0,5px,0)
+    }
+}
+
+@keyframes pop-up {
+    from {
+        top: 100%;
+    }to {
+        top: 35%;
+    }
+}
